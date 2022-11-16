@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/shoppingcart.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+   
+    <title>Winter Adventures</title>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="navbarResponsive" onload="setupCanvas()">
+  <nav id="navBar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top opacity:0.8px">
+        <div class="container-fluid">
+          <a href="#Home">
+         <canvas id="canvas"></canvas>
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#accomodation">Accomodation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#map">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bookings">Bookings</a>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </nav> 
+
+       <!--Home section-->
+       <div id="Home">
+       <div class="video-background">
+          <div class="video-wrap">
+              <div id="video">
+                <video id="bgvid" autoplay loop muted >
+                <source src="media/video/Mt_Baker.mp4">
+              </video>
+              </div>
+              <div id="bgimg">
+                <img src="/images/mobile-home-page.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="caption text-center">
+            <h1>Holidays in the snow...</h1>
+            <h6>Skiing and snowboarding accomodation</h6>
+          </div>
+          </div>
+          <!--end of home section-->
+
+          
+
+
+          <!--accomodation-->
+          <div id="accomodation">
+          <div class="container-fluid padding">
+            <div class="row padding">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="media/chalet1.jpg" alt="chalet1">
+                  <div class="card-body">
+                  <h4 class="card-title">Tignes</h4>
+                  <p class="card-text">
+                    <p>France</p>
+                    <p>A very well furnished chalet. The Kalinda is great for those who are after a range of facilities but don’t wish to travel far. 
+                    Spa's, gyms, restaurants and a ski shop are right on your doorstep.
+                    
+                    </p>
+                    <a href="chalet1.html" class="btn btn-primary btn-sm">More Details</a>
+                </div>
+              </div>
+            </div>
+         
+
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="media/chalet2.jpg" alt="chalet2">
+              <div class="card-body">
+              <h4 class="card-title">Morzine</h4>
+              <p class="card-text">
+                <p>France</p>
+                <p>Situated in St Jean d’Aulps in the "Portes du Soleil" on the Grande Route des Alpes and 30 minutes south of Lake Geneva - a perfect spot for holidays all year round. A 10 minute walk from the centre of the village.
+                </p>
+                <a href="chalet2.html" class="btn btn-primary btn-sm">More Details</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="media/chalet3.jpg" alt="chalet3">
+            <div class="card-body">
+            <h4 class="card-title">La Tania</h4>
+            <p class="card-text">
+              <p>France</p>
+             <p>Chalet 715 is our premier luxury chalet catering for 15 guests. We've created a unique, warm, welcoming, home away from home for all the old and new. 
+              30 minutes from Lake Geneva - a perfect spot for holidays all year round.
+             </p>
+              <a href="chalet3.html" class="btn btn-primary btn-sm">More Details</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!--end of accomodation section-->
+    
+    
+<!--service-->
+    <div id="service">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Services</h4>
+          <p>Anyone who has travelled with us will know that it is the experience, quality and dedication of our ski resort teams and our in-resort ski services that really 
+            sets us apart from anything else you are likely to experience. We aim to continually exceed clients expectations and ensure every time a client skis with us, 
+            it is their best ski holiday so far.</p>
+           <p> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="check bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg>Our childcare teams deliver a unique service, ensuring that every child gets the attention & support they need.</p>
+           <p><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="check bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg>Our comprehensive range of ski programmes ensure that all our clients enjoy their time in the mountains.</p></div>
+            <div class="col-lg-6"><img src="media/ski-services.jpg" class="ski-services" alt="ski-services"></div>
+        </div>
+      </div>
+
+<!--end of service section-->
+  
+<!--contact-->
+
+<div id="contact">
+  <div class="container mt-5">
+    <h1 class="contactForm text-center">Contact</h1>
+    <div id="welcome">
+    <h2 class="welcomeMessage text-center">Welcome <span id="username"></span>! Thank you for using Winter Adventures.</h2>
+    <form id="name-form">
+   
+    <input type="text" class="form-control" id="firstName" placeholder="Firstname..."  required>
+
+    <label for="Name" class="form-label"></label>
+    <input type="text" class="form-control" id="surnname" placeholder="Surname..."  required>
+ 
+    <label for="email-address" class="form-label"></label>
+    <input type="text" class="form-control" id="email-address" placeholder="Email Address..."  required>
+
+    <label for="address" class="form-label"></label>
+    <input type="text" class="form-control" id="address" placeholder="Address..."  required>
+
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" placeholder="Message..." rows="3" >
+   </textarea>
+   
+    <input type="submit" class="submitbtn" value="Submit">
+   </form>
+  </div>
+   </div>
+</div>
+<!--end of contact-->
+
+
+<!--map--> 
+  <div style="width: 90vw; height: 90vh;" id="map">
+    <h1>Resort Locations</h1>
+	<script>
+		// Enter your apikey below
+		var platform = new H.service.Platform({
+			apikey: "n0B_r4eR0lxbGyhO8JM551W71jT7b_TkHSGzlNZrX2k"
+		});
+		var defaultLayers = platform.createDefaultLayers();
+		//Center map over Rocky Mountain National Park
+		var map = new H.Map(document.getElementById('map'),
+			defaultLayers.vector.normal.map,{
+				center: {lat: 45.469, lng: 6.909},
+				zoom: 6.5,
+		});
+        // Coordinates for RMNP
+        var rmnpCoords = {lat: 45.469, lng: 6.909};
+        // Link to custom marker
+        var rmnpIcon  = new H.map.Icon("https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-4/512/skating-1024.png", {size: {w: 50, h: 50}});
+        // Create a custom marker:
+        var marker  = new H.map.Marker(rmnpCoords, { icon: rmnpIcon });
+        // Add the marker to the map:
+        map.addObject(marker);
+
+           // Coordinates for RMNP
+           var rmnpCoords = {lat: 46.1815, lng: 6.7066};
+        // Link to custom marker
+        var rmnpIcon  = new H.map.Icon("https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-4/512/skating-1024.png", {size: {w: 40, h: 40}});
+        // Create a custom marker:
+        var marker  = new H.map.Marker(rmnpCoords, { icon: rmnpIcon });
+        // Add the marker to the map:
+        map.addObject(marker);
+
+         // Coordinates for RMNP
+         var rmnpCoords = {lat: 45.4317, lng: 6.5950};
+        // Link to custom marker
+        var rmnpIcon  = new H.map.Icon("https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-4/512/skating-1024.png", {size: {w: 40, h: 40}});
+        // Create a custom marker:
+        var marker  = new H.map.Marker(rmnpCoords, { icon: rmnpIcon });
+        // Add the marker to the map:
+        map.addObject(marker);
+    </script>
+ </div>
+</div>
+<!--end of map-->
+
+
+
+
+
+<!--CART-->
+<section id="bookings">
+<h1 class="text-center">Book your holiday with us!</h1>
+
+<h2 class="text-center">Ski Packages</h2>
+
+<div class="row text-center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Ski Economy Package</h5>
+    <h5 class="card-price">£90</h5>
+    <h6 class="card-subtitle mb-2">per week Per person</h6>
+    <p class="card-text">This package includes Skis, Boots and Polls.</p>
+    <button type="button" class="btn btn-primary shop-item-button">Add</button>
+    <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1"></div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Ski Intermediate Package</h5>
+    <h5 class="card-price">£120</h5>
+    <h6 class="card-subtitle mb-2">per week Per person</h6>
+    <p class="card-text">This package includes Skis, Boots and Polls.</p>
+    <button type="button" class="btn btn-primary shop-item-button">Add</button>
+    <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1"></div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Ski Performance Package</h5>
+    <h5 class="card-price">£145</h5>
+    <h6 class="card-subtitle mb-2">per week Per person</h6>
+    <p class="card-text">This package includes Skis, Boots and Polls.</p>
+    <button type="button" class="btn btn-primary shop-item-button">Add</button>
+    <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1"></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<h2 class="text-center">Snowboard Packages</h2>
+
+<div class="row text-center">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Snowboard Economy Package</h5>
+      <h5 class="card-price">£119</h5>
+      <h6 class="card-subtitle mb-2">per week Per person</h6>
+      <p class="card-text">This package includes Snowboards and Boots.</p>
+      <button type="button" class="btn btn-primary shop-item-button">Add</button>
+      <div class="cart-quantity cart-column">
+        <input class="cart-quantity-input" type="number" value="1"></div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Snowboard Intermediate Package</h5>
+      <h5 class="card-price">£145</h5>
+      <h6 class="card-subtitle mb-2">per week Per person</h6>
+      <p class="card-text">This package includes Snowboards and Boots.</p>
+      <button type="button" class="btn btn-primary shop-item-button">Add</button>
+      <div class="cart-quantity cart-column">
+        <input class="cart-quantity-input" type="number" value="1"></div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Snowboard Performance Package</h5>
+      <h5 class="card-price">£170</h5>
+      <h6 class="card-subtitle mb-2">per week Per person</h6>
+      <p class="card-text">This package includes Snowboards and Boots.</p>
+      <button type="button" class="btn btn-primary shop-item-button">Add</button>
+      <div class="cart-quantity cart-column">
+        <input class="cart-quantity-input" type="number" value="1"></div>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
+
+<section class="container content-section">
+  <h2 class="section-header">CART</h2>
+  <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+  </div>
+  <div class="cart-items">
+    
+</div>
+
+<div class="cart-total">
+<strong class="cart-total-title">Total</strong>
+<span class="cart-total-price">£0</span>
+</div>
+<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+</section>
+
+
+
+
+
+    <footer class="footer mt-auto py-1 text-white fixed-bottom">
+      <div class="col text-center">
+        <p><span id="datetime"></span></p><script>var dt = new Date();
+          document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>    
+        </div>
+       
+    </footer>
+
+
+
+   
+  
+   
+    <script src="javascript/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    </html>
+

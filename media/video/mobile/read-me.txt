@@ -1,0 +1,4 @@
+Source of the background image:
+https://source.unsplash.com/XT5OInaElMw/1600x900
+
+This image should replace the mount baker video on the home page when the home page is viewed on a mobile device.

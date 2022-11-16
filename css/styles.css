@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    position:relative;
+    min-height: 100%;
+  }
+.container{
+  margin-top:100px;
+}
+  
+
+.navbar{
+    border-bottom:3px solid #008ed6 ;
+    background-color: rgba(0,0,0,0.6)!important;   
+}
+
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+  
+
+.mountains{
+    position: relative;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.video-background{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    clip: rect(200px, 1920px, 1000px, 0px);
+    transform: translateY(-200px);
+    margin:0px;
+    padding: 0px;
+}
+
+
+.caption{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    color: white;
+}
+
+#accomodation{
+    height: 120vh;
+    padding-bottom: 30px;
+ 
+}
+
+#service{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+    padding: 50px;
+}
+
+.ski-services{
+    border-radius: 50%;
+    height: 300px;
+    display: inline;
+}
+
+.bi{
+    color: aqua;
+}
+
+#contact{
+    padding-bottom: 40px;
+}
+
+.heading{
+    padding-top: 60px;
+    padding-left: 250px;
+}
+
+#myCarousel{
+    margin: 0 auto;
+    width: 500px;
+    padding-bottom: 30px;
+   
+}
+
+#Tignes{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(238, 235, 235, 0.89);
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.tignes{
+    border-radius: 50%;
+    height: 200px;
+    display: inline;
+}
+
+#Morzine{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(238, 235, 235, 0.89);
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.check{
+    color: white;
+}
+
+.MorzineIMG{
+    border-radius: 50%;
+    height: 200px;
+    display: inline;
+}
+
+#chalet-carmen{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(238, 235, 235, 0.89);
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.la-tania{
+    border-radius: 50%;
+    height: 200px;
+    display: inline;
+}
+
+.footer{
+    background-color: black;
+    padding-top: 20px;
+    height: 30px;
+  }
+
+  @media(max-width:576px){
+    #accomodation{
+        transform: translateY(-180px);
+        height: 100%;
+    }
+}
+
+@media(max-width:576px){
+    #service{
+        transform: translateY(1500px);
+        height: 100%;
+    }
+}
+
+
+
+@media(max-width:768px){
+    #service{
+        transform: translateY(1500px);
+        height: 100%;
+    }
+}
+
+@media(max-width:768px){
+    #accomodation{
+        transform: translateY(-180px);
+        height: 100%;
+    }
+}
+
+
+@media(max-width:576px){
+    .ski-services{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media(max-width:992px){
+    #service{
+        transform: translateY(-200px);
+        height: 100%;
+    }
+}
+
+
+@media(max-width:576px){
+    #contact{
+        transform: translateY(-200px);
+        height: 100%;
+    }
+}
+
+@media(max-width:768px){
+    #contact{
+        transform: translateY(-200px);
+        height: 100%;
+    }
+}
+
+.submit{
+    background-color:#2653e8;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+  }
+
+  .submit:hover{
+    background-color:#2677e8;
+    color:white;
+  }
+
+
+  .input_text{
+    margin: auto;
+    display: block;
+  }
+
+  .submitbtn{
+    background-color:#2653e8;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    
+  }
+
+  .submitbtn:hover{
+    background-color:#2677e8;
+    color:white;
+  }
+
+
+h3{
+    padding-top: 70px;
+}
+
+
+h1{
+    padding-bottom:50px;
+    position:relative ;
+    
+}
+
+.temp, .desc{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#map{
+   position: relative;
+   padding-left: 400px;
+   padding-bottom: 150px;
+   margin:0px;
+}
+
+@media(max-width:992px){
+    #map{
+        width: 100%;
+        padding-left:60px;
+    }
+}
+
+
+@media(min-width:480px){
+    #bgimg{
+        display: none;
+    }
+}
+
+@media (max-width: 481px){
+    #bgvid{
+        display: none;
+    }
+}
+
+
+#bgimg{
+   opacity: 0.5;
+}
